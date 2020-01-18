@@ -1,7 +1,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const routes = require('./routes');
+const routesDEV = require('./src/routes');
 
 const app = express();
 
@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://marceloaurino:marcelo35421321@cluster0-gj26a.mon
 });
 
 app.use(express.json());
-app.use(routes);
+app.use(routesDEV);
 
 
 app.listen(3333);
