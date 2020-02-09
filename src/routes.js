@@ -1,8 +1,8 @@
 const { Router } = require('express');
 const DevController = require('./modulos/desenvolvedores/controllers/DevController');
 
-const routes = new Router();
+const routesDEV = new Router();
 
-routes.post('/devs', DevController.create);
+routesDEV.post('/devs', DevController.create);
 
-module.exports = routesDEV
+module.exports = routesDEV;
